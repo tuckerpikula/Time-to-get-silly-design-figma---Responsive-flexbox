@@ -6,3 +6,219 @@ body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
+
+header {
+    background-image: linear-gradient(to bottom right, #FFEBCD, #FF8B72);
+}
+
+.wrapper {
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.heading h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.heading p {
+    font-size: 1.8rem;
+    max-width: 29rem;
+    margin: auto;
+}
+
+.box {
+    width: 30rem;
+    aspect-ratio: 4/3;
+}
+
+.first {
+    background-image: url(https://images.unsplash.com/photo-1515536765-9b2a70c4b333?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-size: cover;
+    background-position-y: 50%;
+    margin: 5.6rem auto 0;
+    border: .3rem solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 1.6rem;
+    width: 30.5rem;
+    height: 23.3rem;   
+}
+
+.hide-mobile {
+    display: none;
+}
+
+
+article h1 {
+    font-size: 3.2rem;
+}
+
+article p {
+    font-size: 1.8rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        padding-top: 7.5em;
+        text-align: left;
+        margin: 0 auto;
+        width: 700px;
+        justify-content: center;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .heading p {
+        font-size: 2.4rem;
+        text-align: left;
+        margin: 0;
+        max-width: 49rem;
+        margin-top: 3.1rem;
+    }
+
+    .box.first {
+        margin-left: 0;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    .first {
+        width: 19.5rem;
+        height: 14.9rem;
+        margin: 0rem;
+    }
+
+    .box.second {
+        background-image: url(https://images.unsplash.com/photo-1579380656108-f98e4df8ea62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+        background-size: cover;
+        background-position-y: 25%;
+        border: .3rem solid #000000;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 1.6rem;
+        width: 19.5rem;
+        height: 14.9rem;
+        margin: 8.3rem 0rem 0rem 0rem;
+    }
+
+    .box.third {
+        background-image: url(https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-size: cover;
+        background-position-y: 65%;
+        border: .3rem solid #000000;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 1.6rem;
+        width: 19.5rem;
+        height: 14.9rem;
+    }
+
+    .animals-pic {
+        display: flex;
+        gap: 3.4rem;
+        margin-top: 4.9rem;
+    }
+
+    .left-col {
+        display: flex;
+        gap: 3.4rem;
+    }
+
+    section.wrapper {
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+    }
+
+    header {
+        height: 53rem;
+    }
+
+    article:nth-of-type(2) {
+        max-width: 27rem;
+    }
+
+    article:nth-of-type(3) {
+        max-width: 27rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .wrapper {
+        padding-top: 13.9rem;
+        margin: 0 auto;
+        width: 1300px;
+        justify-content: center;
+    }
+
+    header {
+        height: 51rem;
+    }
+
+    .heading h1 {
+        padding-top: 6rem;
+        padding-top: rem;
+    }
+
+    .heading p {
+        max-width: 50rem;
+        margin: 1.5rem 0rem 0rem 0rem;
+        line-height: 3.3rem;
+    }
+
+    .left-col {
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    .right-col {
+        align-self: center;
+    }
+
+    .hero {
+        display: flex;
+        gap: 10rem;
+    }
+
+    .first {
+        width:  24rem;
+        height: 18rem;
+    }
+
+    .box.second {
+        width:  24rem;
+        height: 18rem;
+        margin: 0;
+    }
+
+    .box.third {
+        width:  24rem;
+        height: 18rem;
+    }
+
+    .animals-pic {
+        margin: 0;
+    }
+
+    section.wrapper {
+        gap: 13rem;
+        justify-content: center;
+    }
+
+    article:nth-of-type(1) {
+        max-width: 27rem;
+    }
+}
